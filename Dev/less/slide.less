@@ -1,0 +1,31 @@
+.slide-h1 {
+	position: relative;
+	
+	&__text {
+		position: absolute;
+		top:70px;
+		padding: 5px;
+		background-color:rgba(255,266,255,.7);
+	}
+}
+.slide-p {
+	position: relative;
+	
+	&__text{ 
+		@media(max-width:752px){
+			top:40px;
+			.bold {
+					font-weight: bold;
+				}
+			p{
+				font-size: 23px;
+				text-align: center;
+		}
+	}
+		padding: 5px;
+		background-color:rgba(255,266,255,.7);
+		position: absolute;
+		top:200px;
+	}
+}
+

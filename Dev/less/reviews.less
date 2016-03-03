@@ -1,0 +1,86 @@
+.reviews {
+	background-color:rgba(24,185,154,.7);
+	padding: 30px 0px;
+	opasity:10%;
+	&__h2 {
+		margin-bottom: 20px;
+		margin-top: 0px;
+		text-align: center;
+		color: #FFF;
+	}
+	&__btn {
+		
+		border: 1px solid white;
+		background: none;
+		transition: all 0.5s ease-in-out;
+		color: #FFF;
+	}	
+	&__btn:hover {
+		background: #FFF;
+		text-decoration: none;
+		color: #16B699;
+	}
+}
+.reviews .owl-carousel .owl-stage-outer{
+	overflow: visible;
+}
+.reviews__trable {
+	width: 100%;
+	text-align: center;
+}
+.reviews__slider{
+	margin-bottom: 20px;
+}
+.reviews__slider .item {
+	@media(max-width:1199px) {
+		margin-bottom: 40px;
+		margin-left: 0px;
+	}
+	margin-left: 20px;
+	background-color:white;
+	
+	padding: 20px;
+	text-align: center;
+	position: relative;
+}
+.reviews .reviews__slider .item .reviews__img {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 100;
+	top:-20px;
+}
+.reviews .reviews__slider .item .reviews__img img {
+	width: 20px;
+	height: 20px;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+.reviews .reviews__slider .item .reviews__text {
+	padding-top: 100px;
+	
+}
+.reviews .reviews__slider .item .reviews__img p{
+	margin:4px 0;
+}
+.reviewsBG {
+	background-image:url(../img/reviewsBGB.jpg);
+	    background-position: 20% 29%;
+}
+.reviews .reviews__slider .item .reviews__img .img1, .reviews .reviews__slider .item .reviews__img .img2 {
+	height: 80px;
+	width: 80px;
+	
+	  background-position-x: 72%;
+	    border: 1px solid white;
+}
+.reviews .reviews__slider .item .reviews__img .img2{
+	background-image: url(../img/reviewsPeople.png);
+}
+.reviews .reviews__slider .item .reviews__img .img1{
+	background-image: url(../img/reviewsPeople2.png);
+}
+.reviewsBG {
+	margin-bottom: 40px;
+	
+}

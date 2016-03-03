@@ -1,0 +1,481 @@
+.form {
+	.flex {
+		display: flex;
+	}
+	input {
+		outline: none;
+	}
+	&__btn{ 
+		.form-btn{
+			@media(min-width: 768px){
+			// .container();
+		}
+		}
+		background-color: #f1f1f1;
+		padding-bottom:60px;
+		@keyframes run {
+				  0% {
+				    transform: translateX(10%);
+			
+				  }
+				  25% {
+				    transform: translateY(-100%) ; 
+				    border-radius: 0%;
+				  }
+				  50% {
+				    transform: translateX(-10%);
+				    
+				  }
+				  75% {
+				    transform: translateY(100%) ; 
+				    border-radius: 0%;
+				  }
+				  100% {
+				  	trasform:translateX(100%);
+				  }
+				}
+	 	input {
+	 		background-color: #0AB89D;
+	 		width: 100%;
+	 		color:white;
+	 		border: none;
+	 		padding: 10px 0px;
+	 		transition: all 0.5s ease-in-out;
+	 		
+	 	}
+	 	input:hover {
+	 	
+	 		background-color: #079b84;
+	 	}
+	}
+	.date {
+		height: 45px;
+		width: 30%;
+		text-align: center;
+		color: #0AB89D;
+		border: none;
+		@media (min-width:1200px){
+			border:1px solid #EBEBEB;
+		}
+	}
+	.year {
+		
+		text-align: center;
+		width: 40%;
+		height: 45px;
+		color: #0AB89D;
+		border: none;
+		@media (min-width:1200px){
+			border:1px solid #EBEBEB;
+		}
+		
+	}
+	.month {
+		height: 45px;
+		width: 30%;
+			color: #0AB89D;
+		
+		
+		text-align: center;
+		@media (min-width:1200px){
+			border:1px solid #EBEBEB;
+		}
+		border: none;
+		
+	}
+	&__h2 {
+		margin-bottom: 40px;
+		margin-top: 10px;
+		text-align: center;
+	}
+	&__second-step {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		text-align: center;
+		&__item {
+			margin-bottom: 40px;
+			input:checked+label {
+				opacity: 1;
+			}
+			input[type="checkbox"], 
+			input[type="radio"]{
+				display: none;
+			
+			}
+			label[for="house"] {
+				opacity: 0.4;
+			}
+			label[for="hotel"] {
+				opacity: 0.4;
+			}
+			.hotel {
+				opacity: 0.7;
+			}
+			.house {
+				opacity: 0.7;
+			}
+			.hotel-dark{
+				opacity: 1;
+			}
+			label {
+				img {
+					margin:0px auto;
+					// display: block;
+				}
+			}
+			height: 90px;
+			width: 150px;
+			display: inline-block;
+			// padding:0px 20px 40px 23px;
+		}
+		&__hotel {
+			padding:20px 10px;
+			}
+		}
+	&__first-step {
+		padding-top: 45px;
+		padding-bottom: 45px;
+		background-color: #f1f1f1;
+		text-align: center;
+		@media(min-width:1200px){
+			padding-bottom: 90px;
+		}
+		.date-info {
+			@media(min-width:1200px){
+			    padding: 25px 0px 10px 0px;
+   				 background: #fff;
+			}
+		}
+		input {
+		margin-bottom: 30px;
+		
+			}
+			input:focus {
+				border: none;
+			}
+		}
+	&__thirty-step {
+		background-color: #f1f1f1;
+		padding-top: 45px;
+		padding-bottom: 45px;
+		background-color: #f1f1f1;
+		text-align: center;
+		position: relative;
+		.two:before ,
+		.three:before,
+		.four:before,
+		.five:before,
+		.one:before {
+			position: absolute;
+			width: 20px;
+			height: 20px;
+			    background-color:white;
+			    content: "";
+			  	    transform: rotate(50deg);
+			    top: -8%;
+			}
+			.one:before{
+				  left: 10%;
+			}
+			.two:before{
+				  left: 36%;
+			}
+			.three:before{
+				  left: 62%;
+			}
+			.four:before{
+				  left: 87%;
+			}
+			
+
+		
+		
+		.info {
+			background-color: #FFF;
+			padding: 20px 0;
+			display: none;
+			transition: all 0.5s ease-in-out;
+			
+			
+			.info-item{
+				
+				display: inline-block;
+				width: 19%;
+			}
+		}
+		&__type {
+			margin-bottom: 20px;
+			background-color: #FFF;
+			padding: 40px 0px 20px 0px;
+			
+			@media(min-width: 768px){
+				padding: 40px 0px;
+			}
+			.item {
+				position: relative;
+				margin-bottom: 30px;
+				@media(min-width:768px) {
+					margin-bottom: 0px;
+				}
+				.two:before ,
+				.three:before,
+				.four:before,
+				.five:before,
+				.one:before {
+					width: 0px;
+					height: 0px;
+					
+				}
+			}
+			label {
+				
+				padding: 20px 0px;
+				
+				text-transform: uppercase;
+				img {
+					@media (min-width: 768px){
+						    transform: translateX(-50%);
+    						left: 50%;
+    						top:100%;
+    						
+					}
+					position: absolute;
+					left: 30%;
+					top:50%;
+					 transform: translateY(-50%)
+					}
+			}
+			input[type="checkbox"], 
+			input[type="radio"]{
+				display: none;
+			
+			}
+				label {
+					opacity: 0;
+				}
+				input:checked+label{
+				opacity: 1;
+				
+				}
+				
+				input[type="radio"]{
+				display: none;
+				}
+		}
+		}
+	&__fourty-step {
+		
+		
+		.form__fourty-step-field {
+			position: relative;
+			.okey:after{
+			top:25px;
+			}
+		}
+		.after-text {
+			margin-bottom: 20px;
+		}
+		input {
+			text-align: center;
+			margin-bottom: 20px;
+			padding:20px 0px ;
+			text-transform: uppercase;
+		}
+		input[name="tel"]{
+			margin-bottom: 10px;
+			text-transform: none;
+		}
+		input[name="email"]{
+			margin-bottom: 10px;
+			text-transform: none;
+		}
+		p {
+			padding: 0px;
+		}
+		padding-top: 45px;
+		padding-bottom: 45px;
+	}
+	&__fifty-step {
+		background-color: #f1f1f1;
+		padding: 40px 0px;
+		.example {
+			
+			padding-left: 20px;
+		}
+			&__item-arrival {
+				padding: 20px 0px 25px 0px;
+				background-color: #FFF;
+				margin-bottom: 25px;
+					.arrival-item {
+
+					position: relative;
+					label{
+						
+						p{margin-bottom: 0px;
+						margin-left: 20px;
+						
+						
+						}
+						
+						img {
+						position: absolute;
+						left: 0%;
+					   top: 50%;
+    					transform: translateY(-50%);
+						}
+					}
+					label[for="on-arrival"] {
+						opacity: 0.2;
+					}
+					input:checked+label[for="on-arrival"]{
+					opacity: 1;
+					}
+					input[type="radio"]{
+					display: none;
+					}
+				}
+				
+			}
+		.for-pay {
+			background-color: #f1f1f1;
+			padding-bottom: 40px;
+			padding-right: 0px;
+			@media(min-width: 	768px){
+				height:467px;
+			}
+			&__text {
+				padding: 20px 0px;
+				background-color: #fff;
+				height: 	100%;
+				span {
+					border-bottom: 1px dashed black;
+				}
+				.pay-text {
+					img {
+						margin-right: 5px;
+					}
+				}
+				.pay-h {
+					text-align: center;
+				margin-bottom: 20px;
+				padding-bottom: 20px;
+				position: relative;
+				text-transform: uppercase;
+				}
+				.pay-h:before{
+					content: "";
+					border-bottom: 3px solid black;
+					height: 2px;
+					width: 10px;
+					position: absolute;
+					    top: 100%;
+   				 left: 50%;
+    		transform: translateX(-50%);
+					
+				}
+			}
+			   
+			
+		}
+		// input[type="checkbox"], 
+		// 	input[type="radio"]{
+		// 		display: none;
+			
+		// 	}
+		label {
+				text-transform: uppercase;
+			}
+		&__item-now {
+			display: flex;
+			padding: 0px;
+			background-color: #FFF;
+			position: relative;
+			text-align: left;
+			background-color: #FFF;
+			margin-bottom: 20px;
+			padding: 25px 0px;
+			.okey:after {
+					left:-8%;
+					opacity: 0.2;
+					}
+			.now-item {
+				margin-bottom: 30px;
+				position: relative;
+				label{
+					p{margin-bottom: 0px;
+					margin-left: 20px;
+					
+					}
+					
+					img {
+					position: absolute;
+					left: 0%;
+					top:4%;
+					}
+				}
+				label[for="now"] {
+					opacity: 0.2;
+				}
+				input:checked+label[for="now"]{
+				opacity: 1;
+				
+				}
+				input[type="radio"]{
+				display: none;
+				}
+			}
+
+				margin-bottom: 15px;
+			}
+			
+			.payment {
+				
+				.okey:after {
+					    left: 25px;
+						top:65%;
+						opacity: 1;
+					}
+				.payment-item {
+					
+					margin-bottom: 20px;
+					
+					label{
+						margin-bottom: 20px;
+						display: block;
+					}
+					input{
+						text-align: center;
+						padding: 10px 0;
+						
+					}
+				}
+			}
+		}
+	
+	
+	
+	.okey:after{
+				content:'' ;
+				height: 20px;
+				width: 20px;
+				position: absolute;
+				background-image: url(../img/okey.png);
+				background-repeat: no-repeat;
+				left:10%;
+				top:30%;
+			}
+.step-text {
+	color: #929292;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	text-align: center;
+}
+// .form__fourty-step input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+// 			background-color: #FFF;
+//  		}
+}
+.position-relative {
+	position: relative;
+overflow: hidden;
+}
+

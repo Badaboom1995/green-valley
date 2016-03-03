@@ -1,0 +1,75 @@
+.also-room{
+	padding:40px 0px;
+	background-color: #f6f6f6;
+	text-align: center;
+	@media(min-width: 1200px){
+		padding-top: 40px;
+		padding-bottom: 20px;
+	}
+	// .mrr{
+	// 	@media(min-width: 768px){
+	// 		margin-right: 10px;
+	// 	}
+	// }
+	// .mrl{
+	// 	@media(min-width: 768px){
+	// 		margin-left: 10px;
+	// 	}
+	// }
+	&__item{
+		background-color: #FFF;
+		padding-bottom: 30px;
+		margin-bottom: 20px;
+		text-align: center;
+		
+		max-width: 380px;
+		@media(max-width:767px){
+			display: inline-block;
+			width: 100%;
+		}
+		@media(min-width: 768px){
+		text-align: center;
+		display: inline-block;
+		margin-left: 10px;
+		margin-right: 10px;
+		}
+		
+		img {
+			margin-bottom: 10px;
+			width: 100%;
+			min-height: 200px;
+			
+		}
+		h3 {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		p {
+			span {
+				color: #FF7435;
+			}
+		}
+	}
+}
+.also-room .owl-theme .owl-dots .owl-dot.active span, .also-room .owl-theme .owl-dots .owl-dot:hover span{
+	background: #ff7435;
+}
+
+.also-room .owl-theme .owl-dots .owl-dot span {
+	background-color: white;
+	border:1px solid #ff7435;
+}
+.also-room .owl-theme .owl-dots .owl-dot {
+	zoom:1.3;
+}
+.also-room .owl-carousel .owl-dots.disabled {
+display: inline-block;	
+
+}
+.owl-theme .owl-nav.disabled+.owl-dots{
+	@media(min-width: 1150px){
+	display: none;
+}
+	
+}
+ html { overflow-x: hidden; }

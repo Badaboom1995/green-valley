@@ -1,0 +1,27 @@
+{
+  "name": "green-valley",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-notify": "^2.2.0",
+    "gulp-sass": "^2.1.1"
+  },
+  "scripts": {
+    "test": "sosiska"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/turushev2/green-valley.git"
+  },
+  "keywords": [
+    "green-valley"
+  ],
+  "author": "Who iam",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/turushev2/green-valley/issues"
+  },
+  "homepage": "https://github.com/turushev2/green-valley#readme"
+}
